@@ -1,0 +1,38 @@
+fieldset {
+	border: 1px solid black;
+	padding: 5px;
+	width: 640px;
+}
+
+label {
+	clear: left;
+	float: left;
+	margin: 10px;
+	width: 30%;
+	text-align: right;
+}
+
+label.error {
+	clear: none;
+	float: left;
+	color: red;
+	padding-left: .5em;
+	text-align: left;
+	vertical-align: top;
+}
+
+input.error {
+	background-color: tomato;
+}
+
+input, select {
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+input[type='submit'] {
+    clear: left;
+    margin-left: 165px;
+}
