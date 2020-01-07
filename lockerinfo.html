@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/form.css" />
+        <title>Student Locker Information</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script/jquery.validate.min.js"></script>
+        <script src="script/lockerinfo.js" defer></script>
+    </head>
+    <body>
+        <form id="lockerForm" action="#">
+            <fieldset>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" />
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" />
+                <label for="lockerNumber">Locker Number</label>
+                <input type="number" id="lockerNumber" name="lockerNumber" />
+                <label for="combination">Locker Combination</label>
+                <input type="text" id="combination" name="combination" />
+                <input type="submit" value="Add" />
+                <input type="reset" value="Clear" />
+            </fieldset>
+        </form>
+        <form id="requestForm" action="#">
+            <fieldset>
+                <label for="student">Select a student:</label>
+                <select id="student">
+                </select>
+                <label for="selectedLocker">Locker Number</label>
+                <input type="number" id="selectedLocker" name="lockerNumber" readonly="readonly" />
+
+                <label for="selectedCombination">Combination is:</label>
+                <input type="text" id="selectedCombination"
+                       readonly="readonly" />
+            </fieldset>
+        </form>
+        <p>Lockers added:</p>
+        <p>No lockers added yet</p>
+    </body>
+</html>
