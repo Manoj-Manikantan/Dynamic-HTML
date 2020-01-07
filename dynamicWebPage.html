@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learning Letters - A</title>
+        <script src="script/dynamicWebPage.js" defer ></script>
+        <script src="script/jquery-3.3.1.min.js"></script>
+        <style type="text/css">
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                min-width: 980px;
+            }
+            nav {
+                margin: 1em;
+                border: solid thin black;
+                background-color: yellow;
+            }
+            nav #displayChoices {
+                border: solid thin black;
+                background-color: orange;
+            }
+            nav #displayChoices span {
+                font-weight: bold;
+                width: 1em;
+                padding: 0 0.5em;
+                border: solid 1px black;
+                border-right: solid 2px black;
+            }
+            nav #choices {
+                text-align: center;
+                margin: 0.5em 0em;
+                font-size: 280%;
+            }
+            nav #choices p {
+                margin: 0;
+            }
+            #game {
+                width: 80%;
+                margin: 0 auto;
+            }
+            #game header {
+                text-align: center;
+                background-color: aqua;
+                font-size: 350%;
+            }
+            #symbols {
+                width: 80%;
+                font-size: 400%;
+                margin: 0 auto;
+                font-weight: bold;
+            }
+            #symbols table {
+                margin: 0 auto;
+            }
+            #symbols td {
+                text-align: center;
+                width: 1.25em;
+                padding: 0.5em 0;
+            }
+            .selected {
+                color: green;
+                border: solid 5px darkgreen;
+                background-color: lightgreen;
+            }
+            #done {
+                font-size: 1200%;
+                color: red;
+                text-align: center;
+                font-weight: bold;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="displayChoices"><span>-</span> Letters</div>
+            <div id="choices">
+                <p>Choose the letter to find:</p>
+                <p id="choiceList"><strong>A</strong> B C D E F G H I J K L M<br />
+                N O P Q R S T U V W X Y Z</p>
+            </div>
+        </nav>
+        <section id="game">
+        <header>Click or touch this letter:  <strong>A</strong></header>
+            <section id="symbols">
+            <table>
+                <tbody>
+                <tr><td class="target">A</td><td>!</td><td class="target">A</td><td>?</td><td>&amp;</td><td>!</td><td>&amp;</td><td>@</td></tr>
+                <tr><td>9</td><td>3</td><td class="target">A</td><td>8</td><td>7</td><td class="target">A</td><td>0</td><td>9</td></tr>
+                <tr><td class="target">A</td><td>u</td><td>g</td><td class="target">A</td><td>v</td><td>z</td><td>v</td><td>o</td></tr>
+                <tr><td>T</td><td class="target">A</td><td>B</td><td class="target">A</td><td>T</td><td>V</td><td>Z</td><td>W</td></tr>
+                </tbody>
+            </table>
+            </section>
+            <p id="done" class="selected">G O O D<br />
+                    J O B !!</p>
+        </section>
+    </body>
+</html>
